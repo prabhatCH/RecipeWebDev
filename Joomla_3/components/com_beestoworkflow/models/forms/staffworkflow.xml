@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/components/com_beestoworkflow/models/fields">
+		
+		<field name="id" type="text"
+			description="COM_BEESTOWORKFLOW_ID"
+			label="COM_BEESTOWORKFLOW_ID"
+			size="30"
+		/>
+
+		<field name="title" type="title"
+			description="COM_BEESTOWORKFLOW_WORKFLOWS_NAME2"
+			label="COM_BEESTOWORKFLOW_WORKFLOWS_NAME2"
+			size="30" required="true" 
+		/>
+		
+		<field name="owner" type="text"
+			description="COM_BEESTOWORKFLOW_WORKFLOWS_CREATOR"
+			label="COM_BEESTOWORKFLOW_WORKFLOWS_CREATOR"
+			size="30"
+		/>
+		
+		<field name="type"
+			type="list"
+			default="1"
+			label="COM_BEESTOWORKFLOW_WORKFLOWS_TASK_TYPE"
+			description="COM_BEESTOWORKFLOW_WORKFLOWS_TASK_TYPE">
+			<option value="0">COM_BEESTOWORKFLOW_WORKFLOWS_DEPENDANT_TASKS</option>
+			<option value="1">COM_BEESTOWORKFLOW_WORKFLOWS_INDEPENDANT_TASKS</option>
+		</field>
+		
+	</fieldset>
+</form>

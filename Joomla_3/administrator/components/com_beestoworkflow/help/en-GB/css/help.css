@@ -1,0 +1,33 @@
+/**
+ * @version		$Id:$
+ * @package		Joomla
+ * @subpackage	Help
+ * @copyright	Copyright (C) 2009 Chris Davenport. All rights reserved.
+ * @license		GNU/GPL version 2 or later.
+ */
+ 
+/* Basic styles */
+html	{ margin: 5px; }
+body	{ font-family: sans-serif; font-size: 76%; line-height: 1.3em; }
+
+a		{ text-decoration: none; }
+a:hover	{ text-decoration: underline; }
+a.external { background: transparent url(../images/external.png) no-repeat right center; padding-right: 13px; }
+
+b		{ color: #303030; }
+
+h2		{ color: #002bb8; margin: 15px 0 8px 0; font-size: 130%; }
+h3		{ color: #002ba8; margin: 15px 0 8px 0; font-size: 115%; }
+h4		{ color: #002b98; margin: 15px 0 8px 0; }
+
+/* General list styles */
+ol		{ list-style-type:decimal; margin: 5px 0px 20px 50px; }
+ol li	{ padding-bottom: 5px; }
+
+ul		{ list-style-type: square; margin: 15px 0px 20px 50px; }
+ul ul	{ list-style-type: circle; margin: 10px 0px 20px 30px; }
+ul ul li{ padding-bottom: 5px; }
+li		{margin-bottom: 5px; }
+
+p {margin:5px 0px 5px 0px;}
+

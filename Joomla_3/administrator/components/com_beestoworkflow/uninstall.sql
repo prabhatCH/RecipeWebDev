@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS `#__beestowf_bookmarks`;
+DROP TABLE IF EXISTS `#__beestowf_comments`;
+DROP TABLE IF EXISTS `#__beestowf_files`;
+DROP TABLE IF EXISTS `#__beestowf_notes`;
+DROP TABLE IF EXISTS `#__beestowf_projects`;
+DROP TABLE IF EXISTS `#__beestowf_project_workflow`;
+DROP TABLE IF EXISTS `#__beestowf_project_workflow_steps`;
+DROP TABLE IF EXISTS `#__beestowf_tasks`;
+DROP TABLE IF EXISTS `#__beestowf_users`;

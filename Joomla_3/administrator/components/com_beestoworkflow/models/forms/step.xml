@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/administrator/components/com_beestoworkflow/models/fields">
+		
+		<field name="id" type="text" default="0" 
+			readonly="true" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC" />
+			
+		<field name="project_workflow" type="projectworkflow"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_WORKFLOWS_STEPS_PROJECT"
+			label="COM_BEESTOWORKFLOW_WORKFLOWS_STEPS_PROJECT"
+			readonly="true"
+			size="30"
+		/>
+		
+		<field name="title" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_WORKFLOWS_STEPS_TITLE"
+			label="COM_BEESTOWORKFLOW_WORKFLOWS_STEPS_TITLE"
+			required="true"
+			size="30"
+		/>
+		
+		<field name="assigned_to" type="assignedto"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_WORKFLOWS_STEPS_ASSIGNEE"
+			label="COM_BEESTOWORKFLOW_WORKFLOWS_STEPS_ASSIGNEE"
+		/>
+		
+		<field name="due" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_WORKFLOWS_STEPS_DUE"
+			label="COM_BEESTOWORKFLOW_WORKFLOWS_STEPS_DUE"
+			required="true" default="1"
+			size="5"
+		/>
+		
+		<field name="priority" type="list"
+			description="COM_BEESTOWORKFLOW_WORKFLOWS_STEPS_PRIORITY"
+			label="COM_BEESTOWORKFLOW_WORKFLOWS_STEPS_PRIORITY"
+			required="true" default="2">
+			<option value="0">COM_BEESTOWORKFLOW_USUAL_VERY_LOW</option>
+			<option value="1">COM_BEESTOWORKFLOW_USUAL_LOW</option>
+			<option value="2">COM_BEESTOWORKFLOW_USUAL_MEDIUM</option>
+			<option value="3">COM_BEESTOWORKFLOW_USUAL_HIGH</option>
+			<option value="4">COM_BEESTOWORKFLOW_USUAL_VERY_HIGH</option>
+		</field>
+		
+		<field name="description" type="editor"
+			description="COM_BEESTOWORKFLOW_WORKFLOWS_STEPS_DESCRIPTION"
+			label="COM_BEESTOWORKFLOW_WORKFLOWS_STEPS_DESCRIPTION"
+			filter="JComponentHelper::filterText"   buttons="true"
+		/>
+		
+	</fieldset>
+</form>

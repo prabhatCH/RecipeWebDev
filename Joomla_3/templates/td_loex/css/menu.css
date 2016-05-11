@@ -1,0 +1,143 @@
+
+/*** ESSENTIAL STYLES ***/
+
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			200px;
+}
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			2.5em; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			200px; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	float:			left;
+	margin-bottom:	1em;
+}
+.sf-menu a {
+	padding: 		.75em 1em;
+	text-decoration:none;
+}
+
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	outline:		0;
+}
+
+#navigation					{display:block;
+							font-size: 16px;
+							float:right;
+							text-transform:uppercase;
+							margin: 0px;
+							padding-top:7px;
+							z-index: 999999; }
+
+
+#navigation	ul			{margin:0; }	
+
+
+/* left offset of submenus need to match (see below) */
+.sf-menu ul 			{width:200px!important; text-transform: none;}
+
+
+/* match ul width */ 
+ul.sf-menu li li.sfHover ul 		{left:200px!important;} 
+
+
+
+/* match top ul list item height */
+.sf-menu > li:hover > ul,
+.sf-menu > li.sfHover > ul 			{top:40px!important;z-index: 999999;	
+box-shadow:0 0 3px rgba(0,0,0,0.1);
+-moz-box-shadow:0 0 3px rgba(0,0,0,0.1);
+-webkit-box-shadow:0 0 3px rgba(0,0,0,0.1);} 
+					
+
+ul.main-nav							{margin:0;}
+
+
+/*root menu items*/
+.sf-menu li 						{background: transparent;
+												margin:0 3px 0 0;}
+.sf-menu a							{border:0;
+padding:10px;												
+color:#f1f1f1;}
+
+/*active root menu items*/
+.sf-menu li:hover, 
+.sf-menu li.sfHover,
+.sf-menu li.sfHover a,
+.sf-menu li#current a,
+.sf-menu a:focus, 
+.sf-menu a:hover, 
+.sf-menu a:active,
+.sf-menu li.selected a			{  color: #ccc;  }
+
+
+ul.sf-menu li li a:hover,
+ul.sf-menu li li a.sfHover,
+ul.sf-menu li li a:focus,
+ul.sf-menu li li a:active,
+ul.sf-menu li li.selected a {
+	color: #fff;
+	background: #999;
+}
+/*dropdown menu items*/	
+
+.sf-menu li li a				{font-weight:normal; 
+											color:#f1f1f1;
+											font-size:13px;
+											text-shadow: none;
+											padding:9px 15px;
+											border-bottom:0;
+											border-left:0;}	
+											
+.sf-menu li li { background:#888;color:#f1f1f1;
+	border-bottom: 1px #888 solid;
+}																															
+
+.sf-menu a					{color:#f1f1f1;}

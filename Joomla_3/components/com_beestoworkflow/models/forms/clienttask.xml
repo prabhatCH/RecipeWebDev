@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/components/com_beestoworkflow/models/fields">
+		
+		<field name="id" type="text"
+			description="COM_BEESTOWORKFLOW_ID"
+			label="COM_BEESTOWORKFLOW_ID"
+			size="30"
+		/>
+
+		<field name="project_id" type="taskproject"
+			description="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_PROJECT"
+			label="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_PROJECT"
+			size="30" 
+		/>
+		
+		<field name="name" type="text"
+			description="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_TITLE"
+			label="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_TITLE"
+			size="30" 
+		/>
+
+		<field name="description" type="editor"
+			label="COM_BEESTOWORKFLOW_STAFFPROJECTS_DESCRIPTION"
+			description="COM_BEESTOWORKFLOW_STAFFPROJECTS_DESCRIPTION"
+			filter="JComponentHelper::filterText"
+			buttons="false"
+			hide="readmore,pagebreak,article,image,ToggleEditor"
+			
+		 />
+		 
+		 <field name="start" type="calendar"
+			label="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_START" description="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_START"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22" 
+			filter="user_utc" />
+
+		<field name="due" type="calendar"
+			label="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_DUE" description="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_DUE"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22" 
+			filter="user_utc" />
+			
+		<field name="created_by" type="text"
+			description="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_CREATED_BY"
+			label="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_CREATED_BY" 
+		/>
+			
+		<field name="assigned_to" type="taskassignedto"
+			description="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_ASSIGNEE"
+			label="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_ASSIGNEE" 
+		/>
+		
+		<field name="priority" type="taskpriority"
+			description="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_PRIORITY"
+			label="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_PRIORITY" 
+		/>
+		
+		<field name="completed" type="text"
+			description="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_STATUS"
+			label="COM_BEESTOWORKFLOW_STAFFTASKS_TASK_STATUS" 
+		/>
+		
+	</fieldset>
+</form>

@@ -1,0 +1,182 @@
+/*---------------------------------------------------------------
+# Package - Joomla Template  
+# ---------------------------------------------------------------
+# Author - joomlatd http://www.joomlatd.com
+# Copyright (C) 2008 - 2014 joomlatd.com. All Rights Reserved.
+# Websites: http://www.joomlatd.com
+-----------------------------------------------------------------*/
+/* Core */
+
+body.bg{background:#f1f1f1}
+body{color:#000;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:150%}
+a{text-decoration:none;}
+a:hover,a:active,a:focus{text-decoration:none;}
+.ju-base{margin-left:auto;margin-right:auto;position: relative;}
+.ju-block{float:left;display:inline}
+.mod-block {padding:10px}
+.ju-inner{padding-left:10px;padding-right:10px}
+.ju-block .first {margin-left:-10px}
+.ju-block .last {margin-right:-10px}
+.ju-block .single {margin-left:-10px;margin-right:-10px}
+.gap{clear:both;margin-bottom:10px}
+.main-bg {background:#fff; }
+.top-bg{background:#f1f1f1;}
+.tp-bannertimer {z-index: 28 !important;}
+/*top bar*/
+#ju-top-header { padding-top: 5px; color: #111; background-color:#f1f1f1;}
+#ju-banner,
+#ju-bookmarks,
+#members-area{float:right}
+#ju-search{float:left}
+#ju-top-menu{margin-top:10px;float:left}
+#ju-top-menu ul.menu {margin:0;padding:0;}
+#ju-top-menu li{display:inline-block;list-style:none;border-left:1px solid #ccc;padding:0 5px;line-height:12px}
+#ju-top-menu li a{color:#6f6f6f}
+
+/*Header*/
+#header {position:relative}
+a#logo,#logo-text,a#logom{float:left}
+#logo-text h1{font-size:210%;font-weight:bold;text-transform:uppercase;border:0!important;margin:10px 0 0!important;padding:0!important}
+#logo-text h1 a{}
+#logo-text p.site-slogan{margin:0;padding:0;color:#999}
+
+/*Module positions bottom*/
+#ju-bottom{color:#888; background: #f1f1f1;}
+
+/*search*/
+#ju-search .mod-search input#mod-search-searchword, 
+#ju-search .mod-search input#mod-finder-searchword{background:#fafafa url(../images/search.png) no-repeat 3% 50%; padding-left:28px;margin:0;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	box-shadow:0 0 6px rgba(255,255,255,.1) inset;
+}
+
+/* Layout */
+#ju-leftcol, #ju-rightcol, #ju-maincol ,#ju-sideleft, #ju-sideright, #inner_content {float:left}
+#ju-leftcol, #ju-rightcol, #ju-maincol {padding:10px 0}
+#sj-br{position: absolute; top: 0px; left: -5500px;}
+
+/*Font Resizer*/
+div.font-sizer{width:62px;height:16px;line-height:16px;float: right;}
+div.font-sizer a.btn_fs_big,div.font-sizer a.btn_fs_reset,div.font-sizer a.btn_fs_small
+{background-image:url(../images/font-resizer.png);background-repeat:no-repeat;height:16px;width:18px;border:medium none;cursor:pointer;display:block;float:left;text-indent:-999em;padding:0;}
+div.font-sizer a.btn_fs_big{background-position:0 0}
+div.font-sizer a.btn_fs_reset{background-position:-19px 0}
+div.font-sizer a.btn_fs_small{background-position:-37px 0}
+div.font-sizer a.btn_fs_big:hover{background-position:0 -16px}
+div.font-sizer a.btn_fs_reset:hover{background-position:-19px -16px}
+div.font-sizer a.btn_fs_small:hover{background-position:-37px -16px}
+
+/* Breadcrumbs */
+#ju-breadcrumbs .ju-inner {padding:0}
+#ju-breadcrumbs .breadcrumb {
+	margin:0;
+	background:transparent;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border-top:1px solid #e7e7e7;
+	border-bottom:1px solid #e7e7e7	
+}
+
+/* Footer */
+#ju-footer{background:#ccc; color: #000;padding:10px 0;
+	box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);}
+#ju-footer .cp {float:left;}
+
+/*Footer Navigation*/
+#ju-footer-nav{float:right}
+#ju-footer-nav ul{list-style-type:none;padding:0;margin:0 0 5px 0}
+#ju-footer-nav li{background:none;padding:0;display:inline} 
+#ju-footer-nav .nav > li > a:hover {background:none;}
+#ju-footer-nav a{font-weight:normal;text-decoration:none;display:inline;margin:0;padding:0 8px;}
+a#pagetop{float:right; }
+
+/*logo*/
+a#logo{background:url(../images/logo/logo.png) no-repeat; }
+/* clr */
+.clr{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+/* template colors */
+div.color-site{height:14px;line-height:14px; text-align: center; margin-top: 5px;position: relative; z-index: 1000; }
+div.color-site a {padding: 0px 5px; height: 14px; -webkit-border-radius: 35px!important;
+-moz-border-radius: 35px!important;
+-moz-border-radiust: 35px!important;
+border-radius: 35px!important;}
+div.color-site a.btn_fs_blue{ background: #369; color: #369;}
+div.color-site a.btn_fs_red{ background: #c30; color: #c30;}
+div.color-site a.btn_fs_orange{ background: #ed5c28; color: #ed5c28;}
+div.color-site a.btn_fs_green{ background: #693; color: #693;}
+div.color-site a.btn_fs_brown{ background: #963; color: #963;}
+div.color-site a.btn_fs_lilac{ background: #ad77bb; color: #ad77bb;}
+
+/* Button, Input */
+
+input, select, textarea, .inputbox, button, .button, input[type="button"], input[type="submit"] {
+	padding: 3px;
+}
+
+input[type="button"], input[type="text"] {}
+
+input[type="button"] { }
+
+select, input[type="text"], input[type="password"], input[type="email"], textarea, .inputbox, .validate-username, .validate-password { 
+	border: 0; background: #fff; color:#999;
+	-webkit-box-shadow: 0 0 0 1px #ccc inset; box-shadow: 0 0 0 1px #ccc inset;
+	border-radius: 3px; -webkit-border-radius: 3px;
+}
+
+#ol-topsl .inputbox, #ol-botsl .inputbox, #ol-user-panel .inputbox {}
+
+input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover,
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus,
+.inputbox:hover, .inputbox:focus, select:hover, select:focus,
+ textarea:hover, textarea:focus { background: #ffffcc; color:#666; }
+
+
+select.inputbox:focus {outline:none;}
+
+.browserChrome input[type="text"]:focus, .browserChrome input[type="password"]:focus, .browserChrome input[type="email"]:focus,
+.browserSafari input[type="text"]:focus, .browserSafari input[type="password"]:focus, .browserSafari input[type="email"]:focus,
+.browserChrome .inputbox:focus, .browserChrome  textarea:focus,
+.browserSafari .inputbox:focus, .browserSafari textarea:focus {outline: none;}
+
+/* buttons */
+.button, button, input[type="button"], input[type="submit"] {
+	line-height:24px;
+	color: #888;
+	text-transform: uppercase; 
+	border:0; 
+	font-size: 11px !important;
+	cursor:pointer;
+	zoom: 1;
+	*display: inline;
+	vertical-align: top;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	padding: 4px 15px !important;
+	text-shadow: 0 1px 1px rgba(0,0,0, 0.1);
+	-webkit-border-radius: 4px; border-radius: 4px;
+	-webkit-box-shadow: 0 0 0 1px #BBBBBB inset;	
+	-ms-box-shadow: 0 0 0 1px #bbbbbb inset;	
+	box-shadow: 0 0 0 1px #BBBBBB inset;
+	background: #f6f6f6;
+	background-image: -webkit-linear-gradient(top,  #fff, #eee);
+	background-image: -moz-linear-gradient(top, #fff, #eee);
+	background-image: -ms-linear-gradient(top, #ffffff, #eeeeee);
+	background-image: -o-linear-gradient(top, #fff, #eee);
+}
+
+
+.button:hover, button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+	color:#666 !important;
+	cursor: pointer; text-decoration: none !important;
+	background: #eee;
+	background-image: -webkit-linear-gradient(top,  #fff,  #ddd);
+	background-image: -moz-linear-gradient(top,  #fff,  #ddd);
+	background-image: -ms-linear-gradient(top,  #fff,  #ddd);
+	background-image: -o-linear-gradient(top,  #fff,  #ddd);
+}

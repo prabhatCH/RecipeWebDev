@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/administrator/components/com_beestoworkflow/models/fields">
+		
+		<field name="id" type="text" default="0" 
+			readonly="true" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC" />
+			
+		<field name="title" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_WORKFLOWS_TITLE"
+			label="COM_BEESTOWORKFLOW_WORKFLOWS_TITLE"
+			size="30"
+		/>
+		
+		<field name="type" type="list"
+			description="COM_BEESTOWORKFLOW_WORKFLOWS_TASKS_TYPE_HELP"
+			label="COM_BEESTOWORKFLOW_WORKFLOWS_TASKS_TYPE"
+			required="true" default="0">
+			<option value="0">COM_BEESTOWORKFLOW_WORKFLOWS_TASKS_DEPENDANT</option>
+			<option value="1">COM_BEESTOWORKFLOW_WORKFLOWS_TASKS_NORMAL</option>
+		</field>
+		
+	</fieldset>
+</form>

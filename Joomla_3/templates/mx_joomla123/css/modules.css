@@ -1,0 +1,91 @@
+/*---------------------------------------------------------------
+# Package - Joomla Template based on Sboost Framework   
+# ---------------------------------------------------------------
+# Author - mixwebtemplates http://www.mixwebtemplates.com
+# Copyright (C) 2008 - 2013 mixwebtemplates.com. All Rights Reserved.
+# Websites: http://www.mixwebtemplates.com
+-----------------------------------------------------------------*/
+
+/*Module type SP_XHTML*/
+.mod-wrapper {position:relative;}
+.module{
+	margin: 0 auto 5px auto;
+	padding: 2px;}
+
+.white {
+	color: #333;
+	background-color: #fff;
+	margin: 0 auto 10px auto;
+	border: 1px solid #f1f1f1;
+	padding: 5px 10px;
+}
+.white:hover {
+	color: #333;
+	background-color: #f9f9f9;
+}
+.beige {
+	color: #000;
+	background-color: #f9f4ed;
+	margin: 0 auto 10px auto;
+	padding: 5px 10px;
+}
+
+.greys {
+	color: #333;
+	background-color: #f9f9f9;
+	margin: 0 auto 5px auto;
+	padding: 5px 10px;
+	border: 1px solid #f1f1f1;
+}
+.greys:hover {
+	color: #333;
+	background-color: #f1f1f1;
+}
+.reds {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #cc3333;
+	padding: 5px 10px;
+}
+.blues {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #3266ad;
+	padding: 5px 10px;
+}
+.greens {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #99cc33;
+	padding: 5px 10px;
+}
+.oranges {
+	color: #f1f1f1;
+	margin: 0 auto 10px auto;
+	background-color: #f57900;
+	padding: 5px 10px;
+}
+
+.colors {
+	color: #fff;
+	margin: 0 auto 10px auto;
+	background-color: #a6a6a6;
+	padding: 5px;
+}
+
+.mod-wrapper h3{  margin: 0px -4px 5px -4px; line-height:40px; padding: 2px 10px; background:url(../images/h3_mod.png) repeat-x 0 100%;}
+
+.dark {
+	background-color: #444;
+	margin: 0 auto 10px auto;
+	color: #ddd;
+	padding: 5px 10px;
+}
+.dark ul, .mcolor ul, .white ul {
+	padding-left: 5px;
+}
+
+.dark a { color: #ddd !important; text-decoration: underline;}
+.oranges a, .blues a, .greens a, .reds a, .oranges .bt-title { color: #fff !important; }
+.module h3{font-size: 150%;}
+

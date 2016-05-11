@@ -1,0 +1,93 @@
+/*---------------------------------------------------------------
+# Package - Joomla Template based on Stools Framework   
+# ---------------------------------------------------------------
+# Author - joomlatd http://www.joomlatd.com
+# Copyright (C) 2008 - 2014 joomlatd.com. All Rights Reserved.
+# Websites: http://www.joomlatd.com
+-----------------------------------------------------------------*/
+html{direction:rtl}
+a#logo,#logo-text {float:right}
+a#logo {background-position:100% 50%}
+
+#navmenu {float:left}
+/*Float Right*/
+.ju_date,
+#ju-top-menu{float:right}
+
+/*Float Left*/
+#ju-search,
+#ju-banner,#ju-bookmarks,a.login_link{float:left}
+
+/*top menu*/
+#ju-top-menu li{border-right:1px solid #6f6f6f;border-left:none!important}
+
+/*Search*/
+#ju-search .mod-search input#mod-search-searchword, 
+#ju-search .mod-search input#mod-finder-searchword{background-position:4% 50%!important}
+
+/*news show sp2 latest update*/
+.module.highlighted.title-ticker h3.header{right:0!important;width:90px;color:#fff!important;padding:5px 0!important;text-align: center;border-bottom:none!important}
+.module.highlighted.title-ticker .mod-content{margin-right:100px!important;margin-left:auto}
+
+#ju-leftcol, #ju-rightcol, #ju-maincol ,#ju-sideleft, #ju-sideright, #inner_content, .ju-block{float:right!important}
+.ju-block .first {margin-left:0!important;margin-right:-10px}
+.ju-block .last {margin-right:0!important;margin-left:-10px}
+
+#ju-bookmarks {position: absolute; bottom: 5px;right: 0px; left: 0px!important;} 
+
+/*Hornav*/
+#navmenu li .submenu,#sublevel li .submenu {direction:ltr}
+.submenu-inner {direction:rtl}
+#navmenu .megacol {float:right!important}
+#navmenu ul.level-0,
+#sublevel ul.level-1,#navmenu ul.level-0 > li.menu-item,
+#sublevel ul.level-1 > li.menu-item
+{float:right!important}
+#navmenu ul.level-0 > li.parent > a.menu-item span.menu,
+#sublevel ul.level-1 > li.parent > a.menu-item span.menu {background: none!important}
+#navmenu ul.level-0 > li.parent > a.menu-item span.menu,
+#sublevel ul.level-1 > li.parent > a.menu-item span.menu {padding-right: 0!important;padding-left: 12px!important}
+#navmenu ul li.parent > a.menu-item span.menu,
+#sublevel ul li.parent > a.menu-item span.menu {padding-right: 0!important;padding-left: 12px!important;background:url(../images/daddy_rtl.png) no-repeat 0 50%!important}
+#navmenu ul.level-0 > li.menu-item span.has-image,
+#sublevel ul.level-1 > li.menu-item span.has-image{padding-left:0!important;padding-right:18px;background-position:100% 50%!important}
+.msildersContent,.msilders_target { direction:ltr !important}
+.panel h3.pane-toggler a{background:#f5f5f5 url(../images/slider_plus_rtl.png) left top no-repeat;}
+.panel h3.pane-toggler-down a {background:#f5f5f5  url(../images/slider_minus_rtl.png) left top no-repeat;border-bottom:solid 1px #ddd;}
+/*Modules*/
+#ju-bottom .separator .mod-block{}
+
+/* Footer */
+#ju-footer .cp {float:right;}
+#ju-footer-nav{float:left}
+a#pagetop{float:left}
+
+/*Joomla*/
+fieldset dd{float:right}
+fieldset dt{float:right}
+ul.buttonheading{float:left}
+dl.article-info{float:right}
+#form-login-username label, #form-login-password label, #form-login-remember label {float: right;text-align: right}
+#adminForm table thead tr, #adminForm table thead tr th {text-align: right}
+div.pagination ul{text-align:right}
+div.pagination p.counter{float:left}
+.filter-search{float:right}
+div.categories-list dt {float: right}
+
+.login label,.profile-edit dl dt,.remind dl dt,.reset dl dt,.registration dl dt{float:right;text-align:left}
+.login .inputbox,.login input.required,.registration dl dd input.required,.remind dl dd input.required,.reset dl dd input.required,
+.profile-edit .inputbox,.profile-edit input.required,.profile-edit input,.profile-edit select{margin:0 10px 0 0}
+.login .button,.login button,.profile-edit button,.remind button,.reset button,.registration button{margin:0 160px 0 0}
+
+/*Edit*/
+.edit label{float:right;text-align:left}
+label#jform_description-lbl {text-align:right}
+.edit .inputbox,.edit input{margin:0 10px 0 0}
+.edit select{margin:0 10px 0 0}
+.edit div.formelm-buttons {margin:0 140px 20px 0}
+
+/*Bootstrap*/
+.pull-right {float:left}
+.pull-left {float:right}
+div.color-site{height:14px;line-height:14px;float:left;}
+div.font-sizer{width:62px;height:16px;line-height:16px;float: left;}

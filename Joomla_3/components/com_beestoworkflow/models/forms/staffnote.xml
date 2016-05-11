@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/components/com_beestoworkflow/models/fields">
+		
+		<field name="id" type="text"
+			description="COM_BEESTOWORKFLOW_ID"
+			label="COM_BEESTOWORKFLOW_ID"
+			size="30"
+		/>
+
+		<field name="title" type="title"
+			description="COM_BEESTOWORKFLOW_STAFFNOTES_TITLE"
+			label="COM_BEESTOWORKFLOW_STAFFNOTES_TITLE"
+			size="30" required="true" 
+		/>
+		
+		<field name="category" type="notecategory"
+			description="COM_BEESTOWORKFLOW_STAFFNOTES_CATEGORY"
+			label="COM_BEESTOWORKFLOW_STAFFNOTES_CATEGORY"
+			size="30"
+		/>
+
+		<field name="comment" type="editor"
+			label="COM_BEESTOWORKFLOW_STAFFNOTES_NOTE"
+			description="COM_BEESTOWORKFLOW_STAFFNOTES_NOTE"
+			class="inputbox"
+			filter="JComponentHelper::filterText"
+			buttons="false"
+			hide="readmore,pagebreak,article,image,ToggleEditor" 
+		 />
+		 
+		
+	</fieldset>
+</form>

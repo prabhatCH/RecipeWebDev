@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/components/com_beestoworkflow/models/fields">
+		
+		<field name="id" type="text"
+			description="COM_BEESTOWORKFLOW_ID"
+			label="COM_BEESTOWORKFLOW_ID"
+			size="30"
+		/>
+
+		<field name="name" type="text"
+			description="COM_BEESTOWORKFLOW_CLIENT_PROJECT_NAME"
+			label="COM_BEESTOWORKFLOW_CLIENT_PROJECT_NAME"
+			size="30" required="true"
+		/>
+
+		<field name="description" type="editor"
+			label="COM_BEESTOWORKFLOW_CLIENT_PROJECT_DESCRIPTION"
+			description="COM_BEESTOWORKFLOW_CLIENT_PROJECT_DESCRIPTION"
+			class="inputbox"
+			filter="JComponentHelper::filterText"
+			buttons="false"
+			hide="readmore,pagebreak,article,image,ToggleEditor"
+		 />
+
+		<field name="due" type="calendar"
+			label="COM_BEESTOWORKFLOW_CLIENT_PROJECT_DUE" description="COM_BEESTOWORKFLOW_CLIENT_PROJECT_DUE"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22" required="true"
+			filter="user_utc" />
+
+	</fieldset>
+</form>

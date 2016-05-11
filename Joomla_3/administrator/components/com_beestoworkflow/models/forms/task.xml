@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/administrator/components/com_beestoworkflow/models/fields">
+		
+		<field name="id" type="text" default="0" 
+			readonly="true" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC" />
+			
+		<field name="name" type="text"
+			class="readonly" readonly="true"
+			description="COM_BEESTOWORKFLOW_PROJECTS_NAME"
+			label="COM_BEESTOWORKFLOW_PROJECTS_NAME"
+			size="30"
+		/>
+		
+		<field name="project_id" type="taskprojectid"
+			class="readonly" readonly="true"
+			description="COM_BEESTOWORKFLOW_TASKS_TASK_PROJECT"
+			label="COM_BEESTOWORKFLOW_TASKS_TASK_PROJECT"
+		/>
+		
+		<field name="description" type="editor"
+			description="COM_BEESTOWORKFLOW_TASKS_TASK_DESCRIPTION"
+			label="COM_BEESTOWORKFLOW_TASKS_TASK_DESCRIPTION"
+			filter="JComponentHelper::filterText"   buttons="true"
+		/>
+		
+		<field name="start" type="text"
+			class="readonly" readonly="true"
+			description="COM_BEESTOWORKFLOW_TASKS_TASK_START"
+			label="COM_BEESTOWORKFLOW_TASKS_TASK_START"
+		/>
+		
+		<field name="due" type="text"
+			class="readonly" readonly="true"
+			description="COM_BEESTOWORKFLOW_TASKS_TASK_DUE"
+			label="COM_BEESTOWORKFLOW_TASKS_TASK_DUE"
+		/>
+		
+		<field name="assigned_to" type="taskassignedto"
+			class="readonly" readonly="true"
+			description="COM_BEESTOWORKFLOW_TASKS_TASK_ASSIGNED_TO"
+			label="COM_BEESTOWORKFLOW_TASKS_TASK_ASSIGNED_TO"
+		/>
+		
+		<field name="created_by" type="taskcreatedby"
+			class="readonly" readonly="true"
+			description="COM_BEESTOWORKFLOW_TASKS_TASK_CREATED_BY"
+			label="COM_BEESTOWORKFLOW_TASKS_TASK_CREATED_BY"
+		/>
+		
+		<field name="priority" type="taskpriority"
+			class="readonly" readonly="true"
+			description="COM_BEESTOWORKFLOW_TASKS_TASK_PRIORITY"
+			label="COM_BEESTOWORKFLOW_TASKS_TASK_PRIORITY"
+		/>
+		
+		<field name="completed" type="taskcompleted" description="COM_BEESTOWORKFLOW_TASKS_TASK_COMPLETED"
+			label="COM_BEESTOWORKFLOW_TASKS_TASK_COMPLETED" />
+		
+	</fieldset>
+</form>

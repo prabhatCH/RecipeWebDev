@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension method="upgrade" type="component" version="3.0">
+	<name>beestoworkflow</name>
+	<author>Ionut Lupu</author>
+	<creationDate>June 2014</creationDate>
+	<authorEmail>contact@ionutlupu.me</authorEmail>
+	<authorUrl>ionutlupu.me</authorUrl>
+	<copyright>Ionut Lupu</copyright>
+	<license>GNU/GPL</license>
+	<version>1.4 Erdos</version>
+	<description><![CDATA[ beestoworkflow is the perfect project management solution for Joomla! ]]></description>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>beestoworkflow.php</filename>
+		<filename>controller.php</filename>
+		<filename>license.txt</filename>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>tables</folder>
+		<folder>views</folder>
+	</files>
+
+	<administration>
+		<menu img="components/com_beestoworkflow/assets/images/beestoworkflow.png" link="option=com_beestoworkflow">COM_BEESTOWORKFLOW</menu>
+
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>beestoworkflow.php</filename>
+			<filename>controller.php</filename>
+			<filename>license.txt</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>files</folder>
+			<folder>help</folder>
+			<folder>helpers</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+
+	</administration>
+</extension>

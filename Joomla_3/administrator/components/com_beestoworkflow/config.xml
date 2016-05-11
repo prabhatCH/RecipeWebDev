@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+<fieldset name="general" label="COM_BEESTOWORKFLOW_SETTINGS_GENERAL_SETTINGS" description="">
+
+	<field name="upcomingItems" type="text" size="5" default="7" label="COM_BEESTOWORKFLOW_SETTINGS_UPCOMING_ITEMS_DISPLAY" description="COM_BEESTOWORKFLOW_SETTINGS_UPCOMING_ITEMS_DISPLAY" />
+
+</fieldset>
+
+<fieldset name="alerts" label="COM_BEESTOWORKFLOW_SETTINGS_EMAIL_ALERTS" description="">
+
+  	<field name="new_project" type="list" default="0" label="COM_BEESTOWORKFLOW_SETTINGS_NEW_PROJECT_CREATED" description="COM_BEESTOWORKFLOW_SETTINGS_NEW_PROJECT_CREATED">
+			<option value="0">COM_BEESTOWORKFLOW_SETTINGS_NONE</option>
+			<option value="1">COM_BEESTOWORKFLOW_SETTINGS_CREATOR</option>
+			<option value="2">COM_BEESTOWORKFLOW_SETTINGS_ASSIGNEE</option>
+			<option value="3">COM_BEESTOWORKFLOW_SETTINGS_BOTH</option>
+	</field>
+	
+	<field name="new_project_alert_subj" type="text" size="50" default="New Project Created" label="COM_BEESTOWORKFLOW_SETTINGS_ALERT_SUBJECT" description="COM_BEESTOWORKFLOW_SETTINGS_ALERT_SUBJECT"></field>
+	<field name="new_project_alert_body" type="editor" label="COM_BEESTOWORKFLOW_SETTINGS_ALERT_BODY" description="COM_BEESTOWORKFLOW_SETTINGS_ALERT_BODY"></field>
+	
+	
+	<field name="" type="spacer" hr="true" />
+	<field name="project_completed" type="list" default="0" label="COM_BEESTOWORKFLOW_SETTINGS_PROJECT_COMPLETED" description="COM_BEESTOWORKFLOW_SETTINGS_PROJECT_COMPLETED">
+			<option value="0">COM_BEESTOWORKFLOW_SETTINGS_NONE</option>
+			<option value="1">COM_BEESTOWORKFLOW_SETTINGS_CREATOR</option>
+			<option value="2">COM_BEESTOWORKFLOW_SETTINGS_ASSIGNEE</option>
+			<option value="3">COM_BEESTOWORKFLOW_SETTINGS_BOTH</option>
+	</field>
+	
+	<field name="project_completed_alert_subject" type="text" size="50" default="Project Completed" label="COM_BEESTOWORKFLOW_SETTINGS_ALERT_SUBJECT" description="COM_BEESTOWORKFLOW_SETTINGS_ALERT_SUBJECT"></field>
+	<field name="project_completed_alert_body" type="editor" label="COM_BEESTOWORKFLOW_SETTINGS_ALERT_BODY" description="COM_BEESTOWORKFLOW_SETTINGS_ALERT_BODY"></field>
+
+
+	<field name="" type="spacer" hr="true" />
+	<field name="new_task" type="list" default="0" label="COM_BEESTOWORKFLOW_SETTINGS_NEW_TASK_CREATED" description="COM_BEESTOWORKFLOW_SETTINGS_NEW_TASK_CREATED">
+			<option value="0">COM_BEESTOWORKFLOW_SETTINGS_NONE</option>
+			<option value="1">COM_BEESTOWORKFLOW_SETTINGS_ASSIGNEE</option>
+
+	</field>
+	
+	<field name="new_task_alert_subj" type="text" size="50" default="New Project Task Created" label="COM_BEESTOWORKFLOW_SETTINGS_ALERT_SUBJECT" description="COM_BEESTOWORKFLOW_SETTINGS_ALERT_SUBJECT"></field>
+	<field name="new_task_alert_body" type="editor" label="COM_BEESTOWORKFLOW_SETTINGS_ALERT_BODY" description="COM_BEESTOWORKFLOW_SETTINGS_ALERT_BODY"></field>
+	
+	
+	<field name="" type="spacer" hr="true" />
+	<field name="task_completed" type="list" default="0" label="COM_BEESTOWORKFLOW_SETTINGS_TASK_COMPLETED" description="COM_BEESTOWORKFLOW_SETTINGS_TASK_COMPLETED">
+			<option value="0">COM_BEESTOWORKFLOW_SETTINGS_NONE</option>
+			<option value="1">COM_BEESTOWORKFLOW_SETTINGS_CREATOR</option>
+	</field>
+	
+	<field name="task_completed_alert_subj" type="text" size="50" default="Task Completed" label="COM_BEESTOWORKFLOW_SETTINGS_ALERT_SUBJECT" description="COM_BEESTOWORKFLOW_SETTINGS_ALERT_SUBJECT"></field>
+	<field name="task_completed_alert_body" type="editor" label="COM_BEESTOWORKFLOW_SETTINGS_ALERT_SUBJECT" description="COM_BEESTOWORKFLOW_SETTINGS_ALERT_SUBJECT"></field>
+
+	<field name="" type="spacer" hr="true" />
+
+	<field name="proj_mess_alert" type="text" size="50" default="New Project Message Added" label="COM_BEESTOWORKFLOW_SETTINGS_NEW_PROJECT_MESSAGE_ALERT" description="COM_BEESTOWORKFLOW_SETTINGS_NEW_PROJECT_MESSAGE_ALERT"></field>
+	<field name="proj_file_alert" type="text" size="50" default="New Project File Added" label="COM_BEESTOWORKFLOW_SETTINGS_NEW_PROJECT_FILE_ALERT" description="COM_BEESTOWORKFLOW_SETTINGS_NEW_PROJECT_FILE_ALERT"></field>
+	<field name="task_mess_alert" type="text" size="50" default="New Task Message Added" label="COM_BEESTOWORKFLOW_SETTINGS_NEW_TASK_MESSAGE_ALERT" description="COM_BEESTOWORKFLOW_SETTINGS_NEW_TASK_MESSAGE_ALERT"></field>
+	<field name="task_file_alert" type="text" size="50" default="New Task File Added" label="COM_BEESTOWORKFLOW_SETTINGS_NEW_TASK_FILE_ALERT" description="COM_BEESTOWORKFLOW_SETTINGS_NEW_TASK_FILE_ALERT"></field>
+</fieldset>
+
+
+<fieldset name="pr" label="COM_BEESTOWORKFLOW_SETTINGS_PROJECT_REQUEST" description="">
+	
+	<field name="project_request_email_to" type="text" default="" label="COM_BEESTOWORKFLOW_SETTINGS_PROJECT_REQUEST_SEND_TO" description="COM_BEESTOWORKFLOW_SETTINGS_PROJECT_REQUEST_SEND_TO"></field>
+	<field name="project_request_email_subj" type="text" default="" label="COM_BEESTOWORKFLOW_SETTINGS_PROJECT_REQUEST_TITLE" description="COM_BEESTOWORKFLOW_SETTINGS_PROJECT_REQUEST_TITLE"></field>
+	
+	<field name="" type="spacer" hr="false" />
+	<field name="project_request_email_body" width="330" type="editor" filter="safehtml" default="" label="COM_BEESTOWORKFLOW_SETTINGS_PROJECT_REQUEST_MESSAGE" description="COM_BEESTOWORKFLOW_SETTINGS_PROJECT_REQUEST_MESSAGE"></field>
+
+	
+</fieldset>
+
+
+<fieldset name="files" label="COM_BEESTOWORKFLOW_SETTINGS_FILES" description="">
+	
+	<field name="allow_attachments" type="radio" default="0" class="btn-group" label="COM_BEESTOWORKFLOW_SETTINGS_FILES_ALLOW" description="COM_BEESTOWORKFLOW_SETTINGS_FILES_ALLOW">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+	</field>
+	
+	<field name="upload_extensions" type="text" size="50" default="bmp,gif,jpg,jpeg,png,psd,tiff,doc,docx,odt,xls,xlsx,xml,ppt,pdf,csv"
+			label="COM_BEESTOWORKFLOW_SETTINGS_LEGAL_FILES" description="COM_BEESTOWORKFLOW_SETTINGS_LEGAL_FILES_HELP" />
+			
+	<field name="ignored_extensions" type="text" size="50" default="php,cgi,asp"
+			label="COM_BEESTOWORKFLOW_SETTINGS_FILES_IGNORED" description="COM_BEESTOWORKFLOW_SETTINGS_FILES_IGNORED" />
+	
+</fieldset>
+
+<fieldset name="staff" label="COM_BEESTOWORKFLOW_SETTINGS_STAFF" description="">
+	
+	<field name="viewActiveProjects" type="radio" class="btn-group" default="0" label="COM_BEESTOWORKFLOW_USERS_ACTIVE_PROJECTS_VIEW" description="COM_BEESTOWORKFLOW_USERS_ACTIVE_PROJECTS_VIEW">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+	</field>
+
+	<field name="editActiveProjects" type="radio" class="btn-group" default="0" label="COM_BEESTOWORKFLOW_USERS_ACTIVE_PROJECTS_CHANGE" description="COM_BEESTOWORKFLOW_USERS_ACTIVE_PROJECTS_CHANGE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+	</field>
+
+	<field name="viewArchiveProjects" type="radio" class="btn-group" default="0" label="COM_BEESTOWORKFLOW_USERS_PROJECT_ARCHIVE_VIEW" description="COM_BEESTOWORKFLOW_USERS_PROJECT_ARCHIVE_VIEW">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+	</field>
+
+	<field name="editArchiveProjects" type="radio" class="btn-group" default="0" label="COM_BEESTOWORKFLOW_USERS_PROJECT_ARCHIVE_EDIT" description="COM_BEESTOWORKFLOW_USERS_PROJECT_ARCHIVE_EDIT">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+	</field>
+
+	<field name="viewFiles" type="radio" class="btn-group" default="0" label="COM_BEESTOWORKFLOW_USERS_FILES_VIEW" description="COM_BEESTOWORKFLOW_USERS_FILES_VIEW">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+	</field>
+
+	<field name="deleteFiles" type="radio" class="btn-group" default="0" label="COM_BEESTOWORKFLOW_USERS_FILES_DELETE" description="COM_BEESTOWORKFLOW_USERS_FILES_DELETE">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+	</field>
+
+	<field name="createWorkflows" type="radio" class="btn-group" default="0" label="COM_BEESTOWORKFLOW_USERS_CAN_CREATE_WORKFLOWS" description="COM_BEESTOWORKFLOW_USERS_CAN_CREATE_WORKFLOWS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+	</field>
+	
+	<field name="manageProjectRequests" type="radio" class="btn-group" default="0" label="COM_BEESTOWORKFLOW_USERS_CAN_MANAGE_PROJECT_REQUESTS" description="COM_BEESTOWORKFLOW_USERS_CAN_MANAGE_PROJECT_REQUESTS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+	</field>
+	
+</fieldset>
+
+
+<fieldset name="client" label="COM_BEESTOWORKFLOW_SETTINGS_CLIENT_PERMISSIONS" description="">
+		
+	<field name="view_allprojects" type="radio" class="btn-group" default="0" label="COM_BEESTOWORKFLOW_USERS_VIEW_ALL_PROJECTS_WITH_VIEW" description="COM_BEESTOWORKFLOW_USERS_VIEW_ALL_PROJECTS_WITH_VIEW">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+	</field>
+	
+		<field name="view_alltasks" type="radio" class="btn-group" default="0" label="COM_BEESTOWORKFLOW_USERS_VIEW_ALL_TASKS" description="COM_BEESTOWORKFLOW_USERS_VIEW_ALL_TASKS">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+	</field>
+	
+</fieldset>
+
+<fieldset name="permissions_LABEL" description="JCONFIG_PERMISSIONS_DESC" label="JCONFIG_PERMISSIONS_LABEL">
+
+	<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" class="inputbox" filter="rules" validate="rules" component="com_beestoworkflow" section="component" />
+	
+</fieldset>
+
+</config>

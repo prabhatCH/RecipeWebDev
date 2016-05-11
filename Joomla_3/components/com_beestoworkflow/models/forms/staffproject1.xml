@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/components/com_beestoworkflow/models/fields">
+			
+			
+		<field name="id" type="text"
+			description="COM_BEESTOWORKFLOW_ID"
+			label="COM_BEESTOWORKFLOW_ID"
+			size="30"
+		/>
+		
+		<field name="name" type="text"
+			description="COM_BEESTOWORKFLOW_STAFFPROJECTS_NAME"
+			label="COM_BEESTOWORKFLOW_STAFFPROJECTS_NAME"
+			size="30"
+		/>
+		
+		<field name="manager" type="text"
+			description="COM_BEESTOWORKFLOW_STAFFPROJECTS_MANAGER"
+			label="COM_BEESTOWORKFLOW_STAFFPROJECTS_MANAGER"
+			size="30"
+		/>
+
+		<field name="description" type="editor"
+			label="COM_BEESTOWORKFLOW_STAFFPROJECTS_DESCRIPTION"
+			description="COM_BEESTOWORKFLOW_STAFFPROJECTS_DESCRIPTION"
+			class="inputbox"
+			filter="JComponentHelper::filterText"
+			buttons="false"
+			hide="readmore,pagebreak,article,image,ToggleEditor"
+		 />
+		
+		<field name="client" type="projectclient"
+			description="COM_BEESTOWORKFLOW_STAFFPROJECTS_CLIENT"
+			label="COM_BEESTOWORKFLOW_STAFFPROJECTS_CLIENT"
+		/>
+		
+		<field name="client_view"
+			type="list"
+			default="0"
+			label="COM_BEESTOWORKFLOW_STAFFPROJECTS_CLIENT_VIEW"
+			description="COM_BEESTOWORKFLOW_STAFFPROJECTS_CLIENT_VIEW">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="status"
+			type="list"
+			default="1"
+			label="COM_BEESTOWORKFLOW_STAFFPROJECTS_STATUS"
+			description="COM_BEESTOWORKFLOW_STAFFPROJECTS_STATUS">
+			<option value="1">COM_BEESTOWORKFLOW_STAFFPROJECTS_ACTIVE</option>
+			<option value="2">COM_BEESTOWORKFLOW_STAFFPROJECTS_COMPLETED</option>
+		</field>
+		
+		<field name="project_template" type="projecttemplate"
+			description="COM_BEESTOWORKFLOW_STAFFPROJECTS_WORKFLOW"
+			label="COM_BEESTOWORKFLOW_STAFFPROJECTS_WORKFLOW" 
+		/>
+		
+		<field name="start" type="text"
+			label="COM_BEESTOWORKFLOW_STAFFPROJECTS_DATE_START" description="COM_BEESTOWORKFLOW_STAFFPROJECTS_DATE_START"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22" />
+
+		<field name="due" type="text"
+			label="COM_BEESTOWORKFLOW_STAFFPROJECTS_DATE_DUE" description="COM_BEESTOWORKFLOW_STAFFPROJECTS_DATE_DUE"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"  />
+	
+		
+	</fieldset>
+</form>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details"
+		addfieldpath="/administrator/components/com_beestoworkflow/models/fields">
+		
+		<field name="id" type="text" default="0" 
+			readonly="true" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC" />
+			
+		<field name="name" type="bwfname"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_USERS_CONTACT_NAME"
+			label="COM_BEESTOWORKFLOW_USERS_CONTACT_NAME"
+			size="30"
+		/>
+		
+		<field name="type" type="type"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_USERS_TYPE"
+			label="COM_BEESTOWORKFLOW_USERS_TYPE"
+			size="30"
+		/>
+		
+		<field name="department" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_USERS_CONTACT_DEPARTMENT"
+			label="COM_BEESTOWORKFLOW_USERS_CONTACT_DEPARTMENT"
+		/>
+		
+		<field name="email" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_USERS_CONTACT_EMAIL"
+			label="COM_BEESTOWORKFLOW_USERS_CONTACT_EMAIL"
+			size="30"
+		/>
+
+		<field name="phone" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_USERS_CONTACT_PHONE"
+			label="COM_BEESTOWORKFLOW_USERS_CONTACT_PHONE"
+			size="30"
+		/>
+		
+		<field name="company_name" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_USERS_COMPANY_NAME"
+			label="COM_BEESTOWORKFLOW_USERS_COMPANY_NAME"
+			size="30"
+		/>
+		
+		<field name="company_address" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_USERS_COMPANY_ADDRESS"
+			label="COM_BEESTOWORKFLOW_USERS_COMPANY_ADDRESS"
+			size="30"
+		/>
+		
+		<field name="company_city" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_USERS_COMPANY_CITY"
+			label="COM_BEESTOWORKFLOW_USERS_COMPANY_CITY"
+			size="30"
+		/>
+		
+		<field name="company_zip" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_USERS_COMPANY_ZIPCODE"
+			label="COM_BEESTOWORKFLOW_USERS_COMPANY_ZIPCODE"
+			size="30"
+		/>
+		
+		<field name="company_country" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_USERS_COMPANY_COUNTRY"
+			label="COM_BEESTOWORKFLOW_USERS_COMPANY_COUNTRY"
+			size="30"
+		/>
+		
+		<field name="company_email" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_USERS_COMPANY_EMAIL"
+			label="COM_BEESTOWORKFLOW_USERS_COMPANY_EMAIL"
+			size="30"
+		/>
+		
+		<field name="company_phone" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_USERS_COMPANY_PHONE"
+			label="COM_BEESTOWORKFLOW_USERS_COMPANY_PHONE"
+			size="30"
+		/>
+
+		<field name="company_fax" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_USERS_COMPANY_FAX"
+			label="COM_BEESTOWORKFLOW_USERS_COMPANY_FAX"
+			size="30"
+		/>
+		
+		<field name="company_website" type="text"
+			class="inputbox"
+			description="COM_BEESTOWORKFLOW_USERS_COMPANY_WEBSITE"
+			label="COM_BEESTOWORKFLOW_USERS_COMPANY_WEBSITE"
+			size="30"
+		/>
+		
+		<field name="paramsclients" type="paramsclients"
+			description=""
+			label=""
+		/>
+		
+		<field name="paramsstaff" type="paramsstaff"
+			description=""
+			label=""
+		/>
+		
+	</fieldset>
+</form>

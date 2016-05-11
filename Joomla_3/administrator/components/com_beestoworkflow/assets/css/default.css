@@ -1,0 +1,15 @@
+.icon-32-authorise { background-image : url("../images/icon-32-authorise.png");}
+.icon-32-unauthorise { background-image : url("../images/icon-32-unauthorise.png");}
+.icon-48-users { background-image : url("../images/icon-48-user.png");}
+.icon-48-workflows { background-image : url("../images/icon-48-workflows.png");}
+.icon-48-projects { background-image : url("../images/icon-48-projects.png");}
+.icon-48-tasks { background-image : url("../images/icon-48-tasks.png");}
+.icon-48-xpanel { background-image : url("../images/icon-48-xpanel.png");}
+.icon-48-files { background-image : url("../images/icon-48-attachments.png");}
+.icon-48-about { background-image : url("../images/icon-48-about.png");}
+.icon-32-reports-export { background-image : url("../images/icon-32-export.png");}
+.veryhigh {color:#ff3600;font-weight:800;}
+.high {color:#f47f02;font-weight:700;}
+.medium {color:#eab000;font-weight:500;}
+.low {color:#c49f30;font-weight:200;}
+.verylow {color:#d5c492;font-weight:100;}
